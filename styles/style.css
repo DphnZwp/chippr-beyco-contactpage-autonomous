@@ -236,17 +236,10 @@ textarea:focus {
 }
 
 img {
-    margin-top: 100px;
-    margin-bottom: 10px;
+    padding-top: 100px;
     width: 40%;
 }
 
-.mark {
-    position: absolute;
-    width: 30%;
-    margin-left: 180px;
-    margin-top: 150px;
-}
 
 /* Ipad */
 @media only screen and (max-width:50rem){
