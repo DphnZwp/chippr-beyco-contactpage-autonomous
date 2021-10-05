@@ -16,29 +16,41 @@
         <div class="wrapper">
             <section id="talk">
                 <h2>Let's talk</h2>
-                <form>
-                    <div class="container">
-                        <div class="name">
-                            <label for="name">Name: </label>
-                            <input type="text" id="name" name="name"/>
+                <div id="card">
+                  <section class="front">
+                    <div class="btnbg">
+                    <form>
+                        <div class="container">
+                            <div class="name">
+                                <label for="name">Name: </label>
+                                <input type="text" id="name" name="name"/>
+                            </div>
+                            <div class="email">
+                                <label for="email">Email: </label>
+                                <input type="text" id="email" name="email"/>
+                            </div>
+                            <div class="subject">
+                                <label for="subject">Subject: </label>
+                                <input type="text" id="subject" name="subject"/>
+                            </div>
                         </div>
-                        <div class="email">
-                            <label for="email">Email: </label>
-                            <input type="text" id="email" name="email"/>
-                        </div>
-                        <div class="subject">
-                            <label for="subject">Subject: </label>
-                            <input type="text" id="subject" name="subject"/>
-                        </div>
+                            <textarea name="message" id="message" cols="100" rows="20"></textarea>
+                    </form>
+                        <button class="btn" id="flip">Send</button>
                     </div>
-                        <textarea name="message" id="message" cols="100" rows="20"></textarea>
-                        <input class="submit" type="submit" value="Send">
-                </form>
+                  </section>
+                  <section class="back">
+                      <div class="colorback">
+                          dfsjsdfjjs  
+                          <button class="submit" id="fli">Reset</button>
+                      </div>
+                  </section>
+                </div>
             </section>
             <section id="location">
                 <h2 class="black">We're here</h2>
                 <div class="map">
-                    <iframe scrolling="no" src="https://maps.google.com/maps?25&amp;&amp;hl=nl&amp;q=Mauritskade%2064,%201092%20AD%20Amsterdam+(Beyco)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.429483301174!2d4.918550115801601!3d52.362631979784645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60975811f5c2f%3A0xed0a8af3106cbefc!2sMauritskade%2064%2C%201092%20AD%20Amsterdam!5e0!3m2!1sen!2snl!4v1633419886148!5m2!1sen!2snl"></iframe>
                 </div>
             </section>
         </div>
