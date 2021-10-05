@@ -7,13 +7,16 @@
 body {
     background-color: #EBF2F1;
 }
+/* Padding-top eerste paragraaf */
+.top {
+    padding-top: 20px;
+}
 
 p {
     font-family: "Assistant", sans-serif;
     font-size: 21px;
     line-height: 34px;
     letter-spacing: 0;
-    padding-top: 20px;
     max-width: 750px;
     text-align: center;
     margin: 0 auto;
@@ -35,6 +38,14 @@ h2 {
     letter-spacing: -3%;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 54px;
+    letter-spacing: -2%;
     text-align: center;
 }
 
@@ -193,6 +204,7 @@ textarea:focus {
 #card.flipped {
   transform: rotateY( 180deg);
 }
+
 /* Animatie kaart */
 #card {
     transform-style: preserve-3d;
@@ -206,6 +218,7 @@ textarea:focus {
   position: absolute;
   backface-visibility: hidden;
 }
+
 /* Achterkant formulier */
 #card .back {
     transform: rotateY( 180deg);
@@ -214,6 +227,16 @@ textarea:focus {
 .colorback {
     background-color: #EBF2F1;
     height: 600px;
+    text-align: center;
+}
+
+img {
+    padding-top: 100px;
+    width: 40%;
+}
+/* Margin-bottom tweede paragraaf */
+.bottom {
+    margin-bottom: 20px;
 }
 
 /* Ipad */
