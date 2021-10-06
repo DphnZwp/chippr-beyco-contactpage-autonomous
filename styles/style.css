@@ -49,7 +49,7 @@ h3 {
     text-align: center;
 }
 
-#header {
+header {
     background-color: #EBF2F1;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -198,7 +198,7 @@ textarea:focus {
     grid-template-columns: 1fr 1fr;
 }
 /* Kaart/formulier draaien */
-#card.flipped {
+#card.formIsFlipped {
   transform: rotateY( 180deg);
 }
 /* Animatie kaart */

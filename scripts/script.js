@@ -1,9 +1,9 @@
-var card = document.getElementById('card');
+const card = document.getElementById('card');
 
-document.getElementById('flip').addEventListener('click', function() {
-    card.classList.toggle('flipped');
+document.getElementById('flipFormButton').addEventListener('click', function() {
+    card.classList.toggle('formIsFlipped');
 }, false);
 
-document.getElementById('flip2').addEventListener('click', function() {
-    card.classList.toggle('flipped');
+document.getElementById('flipFormSecondButton').addEventListener('click', function() {
+    card.classList.toggle('formIsFlipped');
 }, false);
