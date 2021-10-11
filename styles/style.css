@@ -58,6 +58,14 @@ h3 {
 header {
     margin-bottom: 40px;
 }
+
+.coffeesvg {
+    text-align: center;
+    margin: 0 auto;
+    width: 10%;
+    display: block;
+    margin-top: 20px;
+}
   
 .white {
     color: #FFFFFF;
@@ -65,6 +73,7 @@ header {
   
 #talk {
     background-color: #3A8070;
+
 }
   
 #location {
@@ -79,36 +88,20 @@ iframe {
     height: 750px;
     border-style: none;
     margin: 0 auto;
-}
- /* De map grijs maken */
+  }
+/* De map grijs maken */
 .map {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
     justify-content: center;
 }
-  
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-  
-/* FORMULIER */
-form {
-    margin-left: 10px;
-    text-align: center;
-    padding-top: 20px;
-    text-align: left;
-}
 
-.bg {
-    background-color: #EBF2F1;
-    padding-right: 30px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    width: 600px;
-}
-  
 input, label, textarea, .btn {
     margin-left: 40px!important;
 }
@@ -156,6 +149,7 @@ input:focus {
 }
     
 textarea {
+    text-align: left;
     border: none;
     resize: none;
     margin-bottom: 15px;
@@ -163,7 +157,7 @@ textarea {
     padding: 9px, 21px, 9px, 9px;
     background: #FFFFFF;
     box-shadow: inset 0px -2.5px 0px #DDDEE0;
-    width: 80%;
+    width: 85%;
 }
     
 textarea:hover {
@@ -181,8 +175,128 @@ textarea:focus {
     display: flex;
     flex-direction: column;
 }
+
 /* KNOP  */
 .btn {
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "Assistant", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 12.75px 25.5px 12.75px 25.5px;
+    width: 125px;
+    height: 47.5px;
+    background: #3A8070;
+    border: 1px solid #FFFFFF;
+    border-radius: 3.4px;
+}
+    
+.btn:hover {
+    background: #FFFFFF;
+    color: #3A8070;
+    border: 1px solid #3A8070;
+    box-shadow: 0px 0px 0px 4px rgba(58, 128, 112, 0.2);
+}
+
+#formCard {
+  position: relative;
+  display: block;
+  margin:0 auto;
+  height: 700px;
+  width:600px;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+}
+
+.formFront {
+  background-color: #EBF2F1;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -o-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: transform 4s cubic-bezier(0.2, 1, 0.3, 1.3);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#formCard.flip .formFront {
+  -webkit-transform: rotateY(180deg);
+  -mox-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.formBack {
+  background-color: #EBF2F1;
+  display: block;
+  z-index: 800;
+  margin-top: -650px;
+  height: 700px;
+  width:600px;
+  padding: 10px;
+  text-align: center;
+  background-color: #E9F0F1;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: transform 4s cubic-bezier(0.2, 1, 0.3, 1.3);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#formCard.flip .formBack{
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -o-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+}
+/* Margin-bottom tweede paragraaf */
+.bottom {
+    margin-bottom: 20px;
+}
+
+img {
+    padding-top: 100px;
+    width: 40%;
+}
+/* Margin-bottom tweede paragraaf */
+.bottomp {
+    margin-bottom: 20px;
+}
+
+.checkmarksvg {
+    padding-top: 100px;
+    width: 40%;
+}
+
+.backh3 {
+    width: 500px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.secondbtn {
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -197,60 +311,15 @@ textarea:focus {
     background: #3A8070;
     border: 1px solid #FFFFFF;
     border-radius: 3.4px;
-    margin: 0 auto;
+    margin: 0 auto
 }
-    
-.btn:hover {
+
+.secondbtn:hover {
     background: #FFFFFF;
     color: #3A8070;
     border: 1px solid #3A8070;
     box-shadow: 0px 0px 0px 4px rgba(58, 128, 112, 0.2);
 }
-/* Kaart/formulier draaien */
-#card.formisflipped {
-  transform: rotateY( 180deg);
-}
-/* Animatie kaart */
-/* ANIMATIE KAART */
-#card {
-    transform-style: preserve-3d;
-    transition: transform 4s cubic-bezier(0.2, 1, 0.3, 1.3);
-}
-
-#card section {
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-}
-/* ACHTERKANT FORMULIER */
-#card .back {
-    transform: rotateY( 180deg);
-  }
-/* Kleur achterkant */
-.colorback {
-    background-color: #EBF2F1;
-    height: 700px;
-    width:600px;
-    text-align: center;
-    margin: 0 auto;
-}
-/* Margin-bottom tweede paragraaf */
-.bottom {
-    margin-bottom: 20px;
-}
-
-img {
-    padding-top: 100px;
-    width: 40%;
-}
-
-.sent {
-    width: 500px;
-    margin: 0 auto;
-}
-
 
 /* IPAD */
 @media only screen and (max-width:50rem){
@@ -267,28 +336,45 @@ img {
         margin-top: 10px;
         max-width: 200px;
     }
-    .bg {
-        background-color: #EBF2F1;
-        padding-right: 30px;
-        margin: 0;
-        padding-bottom: 30px;
-        width: 100%;
+    .formBack {
+        height: 700px;
+        width:50vw;
+        margin-top: -700px;
       }
+    .formFront {
+        height: 700px;
+        width:50vw;
+    }
+    textarea {
+        width: 90%;
+    }
     iframe {
-        display: block;
-        width: 100%;
+        width: 50vw;
       }
       input, label, textarea, .btn {
-        margin-left: 0!important;
+        margin-left: 20px!important;
       }
 }
-
+/* IPAD PRO */
 @media only screen and (max-width:64rem){
-      .bg {
-        width: 100%;
-      }
-      .colorback {
-        width:100%;
+    .formBack {
+        height: 700px;
+        width:50vw;
+        margin-top: -700px;
+    }
+    .formFront {
+        height: 700px;
+        width:50vw;
+    }
+    #talk {
+        width: 50vw;
+    }
+    #location {
+        width: 50vw;
+    }
+    iframe {
+        width: 50vw;
+        height: 500px;
     }
 }
 /* MOBIEL */
@@ -303,26 +389,60 @@ img {
         border: none;
         padding-bottom: 0;
     }
-    #location {
-        margin-top: 670px;
-    }
     .name {
         margin-right: 0;
     }
     p {
         max-width: 300px;
     }
-    .colorback {
-        background-color: #EBF2F1;
-        height: 700px;
-        width:100%;
+    .coffeesvg {
         text-align: center;
-        margin: 0 auto;
+        margin: auto;
+        width: 40%;
+        display: block
+    }
+    input, label, textarea, .btn {
+        margin-left: 10px!important;
+      }
+    textarea {
+        width: 50%;
+    }
+    #talk {
+        width: 100vw;
+    }
+    #location {
+        width: 100vw;
+    }
+    .formBack {
+        height: 700px;
+        width:100vw;
+        margin-top: -700px;
+    }
+    .formFront {
+        height: 700px;
+        width:100vw;
+    }
+    iframe {
+        width: 100vw;
+        height: 500px;
+    }
+    textarea {
+        width: 90%;
     }
 }
 /* IPHONE 5/SE */
 @media only screen and (max-width:20rem){
     input {
         width: 300px;
+    }
+    #talk {
+        width: 100vw;
+    }
+    #location {
+        width: 100vw;
+    }
+    iframe {
+        width: 100vw;
+        height: 500px;
     }
 }
