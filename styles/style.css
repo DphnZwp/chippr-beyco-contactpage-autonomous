@@ -17,7 +17,7 @@ p {
     font-size: 21px;
     line-height: 34px;
     letter-spacing: 0;
-    max-width: 750px;
+    max-width: 700px;
     text-align: center;
     margin: 0 auto;
 }
@@ -42,10 +42,6 @@ h2 {
     text-align: center;
 }
 
-.white {
-    color: #FFFFFF;
-}
-
 h3 {
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
@@ -58,22 +54,22 @@ h3 {
 header {
     margin-bottom: 40px;
 }
-
+/* Svg koffie bonen */
 .coffeesvg {
     text-align: center;
     margin: 0 auto;
-    width: 10%;
+    width: 8%;
     display: block;
     margin-top: 20px;
 }
   
+/* Kopje van talk witte kleur */
 .white {
     color: #FFFFFF;
 }
   
 #talk {
     background-color: #3A8070;
-
 }
   
 #location {
@@ -85,7 +81,7 @@ header {
 iframe {
     display: block;
     width: 600px;
-    height: 750px;
+    height: 700px;
     border-style: none;
     margin: 0 auto;
   }
@@ -96,7 +92,7 @@ iframe {
     -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
     justify-content: center;
 }
-
+/* Talk en location naast elkaar met grid */
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,11 +101,11 @@ iframe {
 input, label, textarea, .btn {
     margin-left: 40px!important;
 }
-    
+/* Input en label onder elkaar     */
 input, label {
     display:flex;
 }
-    
+
 label {
     font-family: "Assistant", sans-serif;
     text-align: left;
@@ -121,7 +117,7 @@ label {
     height: 22px;
     width: 39px;
 }
-    
+
 input {
     height: 41px;
     width: 343px;
@@ -136,18 +132,30 @@ input {
 .name {
     margin-top: 30px;
 }
-    
+
 input:hover {
     box-shadow: inset 0px -2.5px 0px #DDDEE0;
     border: 4px solid rgba(58, 128, 112, 0.2);
 }
-    
+
 input:focus {
     border: 4px solid rgba(58, 128, 112, 0.2);
     box-shadow: inset 0px -2.5px 0px #3A8070;
     outline: none;
 }
-    
+/* Error ontwerp */
+input:invalid[type="email"] {
+      box-shadow: inset 0px -2.5px 0px red;
+  }
+  
+  input:focus:required:invalid { border: 4px solid rgba(58, 128, 112, 0.2);
+      box-shadow: inset 0px -2.5px 0px red;
+  }
+
+  textarea:focus:required:invalid { border: 4px solid rgba(58, 128, 112, 0.2);
+    box-shadow: inset 0px -2.5px 0px red;
+}
+
 textarea {
     text-align: left;
     border: none;
@@ -159,12 +167,12 @@ textarea {
     box-shadow: inset 0px -2.5px 0px #DDDEE0;
     width: 85%;
 }
-    
+
 textarea:hover {
     box-shadow: inset 0px -2.5px 0px #DDDEE0;
     border: 4px solid rgba(58, 128, 112, 0.2);
 }
-    
+
 textarea:focus {
     border: 4px solid rgba(58, 128, 112, 0.2);
     box-shadow: inset 0px -2.5px 0px #3A8070;
@@ -201,75 +209,73 @@ textarea:focus {
     box-shadow: 0px 0px 0px 4px rgba(58, 128, 112, 0.2);
 }
 
+/* FORM FLIP ANIMATIE */
 #formCard {
-  position: relative;
-  display: block;
-  margin:0 auto;
-  height: 700px;
-  width:600px;
-  -webkit-perspective: 600px;
-  -moz-perspective: 600px;
-  -o-perspective: 600px;
-  perspective: 600px;
+    position: relative;
+    display: block;
+    margin:0 auto;
+    height: 700px;
+    width:600px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -o-perspective: 600px;
+    perspective: 600px;
 }
 
 .formFront {
-  background-color: #EBF2F1;
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg);
-  -o-transform: rotateX(0deg) rotateY(0deg);
-  transform: rotateX(0deg) rotateY(0deg);
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  transition: transform 4s cubic-bezier(0.2, 1, 0.3, 1.3);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
+    background-color: #EBF2F1;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: transform 4s cubic-bezier(0.2, 1, 0.3, 1.3);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 #formCard.flip .formFront {
-  -webkit-transform: rotateY(180deg);
-  -mox-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -mox-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .formBack {
-  background-color: #EBF2F1;
-  display: block;
-  z-index: 800;
-  margin-top: -650px;
-  height: 700px;
-  width:600px;
-  padding: 10px;
-  text-align: center;
-  background-color: #E9F0F1;
-  -webkit-transform: rotateY(-180deg);
-  -moz-transform: rotateY(-180deg);
-  -o-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  transition: transform 4s cubic-bezier(0.2, 1, 0.3, 1.3);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
+    background-color: #EBF2F1;
+    display: block;
+    margin-top: -670px;
+    height: 700px;
+    width:600px;
+    padding: 10px;
+    text-align: center;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: transform 4s cubic-bezier(0.2, 1, 0.3, 1.3);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 #formCard.flip .formBack{
-  z-index: 1000;
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg);
-  -o-transform: rotateX(0deg) rotateY(0deg);
-  transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
 }
 /* Margin-bottom tweede paragraaf */
 .bottom {
@@ -296,9 +302,8 @@ img {
     line-height: 50px;
 }
 
+/* TWEEDE KNOP */
 .secondbtn {
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     color: #FFFFFF;
     font-family: "Assistant", sans-serif;
@@ -355,6 +360,7 @@ img {
         margin-left: 20px!important;
       }
 }
+
 /* IPAD PRO */
 @media only screen and (max-width:64rem){
     .formBack {
@@ -377,6 +383,7 @@ img {
         height: 500px;
     }
 }
+
 /* MOBIEL */
 @media only screen and (max-width:30rem){
     /* Location en talk onder elkaar */
@@ -389,15 +396,13 @@ img {
         border: none;
         padding-bottom: 0;
     }
-    .name {
-        margin-right: 0;
-    }
     p {
         max-width: 300px;
     }
     .coffeesvg {
         text-align: center;
         margin: auto;
+        margin-top: 20px;
         width: 40%;
         display: block
     }
@@ -430,6 +435,7 @@ img {
         width: 90%;
     }
 }
+
 /* IPHONE 5/SE */
 @media only screen and (max-width:20rem){
     input {
