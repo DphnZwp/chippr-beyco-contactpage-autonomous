@@ -56,6 +56,7 @@ header {
 }
 /* Svg koffie bonen */
 .coffeesvg {
+    fill: #3A8070;
     text-align: center;
     margin: 0 auto;
     width: 8%;
@@ -149,11 +150,11 @@ input:invalid[type="email"] {
   }
   
   input:focus:required:invalid { border: 4px solid rgba(58, 128, 112, 0.2);
-      box-shadow: inset 0px -2.5px 0px red;
+      box-shadow: inset 0px -2.5px 0px #D9585C;
   }
 
   textarea:focus:required:invalid { border: 4px solid rgba(58, 128, 112, 0.2);
-    box-shadow: inset 0px -2.5px 0px red;
+    box-shadow: inset 0px -2.5px 0px #D9585C;
 }
 
 textarea {
@@ -292,8 +293,12 @@ img {
 }
 
 .checkmarksvg {
-    padding-top: 100px;
+    fill: #3A8070;
+    padding-top: 120px;
+    padding-bottom: 5px;
     width: 40%;
+    margin: 0 auto;
+    display: block;
 }
 
 .backh3 {
