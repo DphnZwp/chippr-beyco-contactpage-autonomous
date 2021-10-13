@@ -4,7 +4,7 @@
 
 ## Beschrijving
 De huidige contactpagina van Beyco is erg simpel. Voor gebruikers moet het gemakkelijker worden om contact op te nemen. Hiervoor willen ze een nieuwe contactpagina in de huisstijl die responsive is.
-<!-- Voeg een link toe naar Github Pages 🌐-->
+🌐 https://daphnebeycocontact.student.fdnd.nl/
 <!-- Voeg een mooie poster visual toe 📸 -->
 
 ## Inhoudsopgave
