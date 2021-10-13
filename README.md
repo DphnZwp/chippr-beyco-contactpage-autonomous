@@ -2,6 +2,7 @@
 
 # Beyco contactpagina
 🌐 https://daphnebeycocontact.student.fdnd.nl/
+![screenshot](https://user-images.githubusercontent.com/69635977/137127263-e274d9e5-2531-4a88-a087-d65637da612f.png)
 
 ## Beschrijving
 De huidige contactpagina van Beyco is erg simpel. Voor gebruikers moet het gemakkelijker worden om contact op te nemen. Hiervoor willen ze een nieuwe contactpagina in de huisstijl die responsive is.
