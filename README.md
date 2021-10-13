@@ -1,12 +1,11 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-
+# Beyco contactpagina
+Hier is de link naar mijn contactpagina:
+🌐 https://daphnebeycocontact.student.fdnd.nl/
 ## Beschrijving
 De huidige contactpagina van Beyco is erg simpel. Voor gebruikers moet het gemakkelijker worden om contact op te nemen. Hiervoor willen ze een nieuwe contactpagina in de huisstijl die responsive is.
 
-Hier is de link naar mijn contactpagina:
-🌐 https://daphnebeycocontact.student.fdnd.nl/
 <!-- Voeg een mooie poster visual toe 📸 -->
 
 ## Inhoudsopgave
