@@ -20,8 +20,26 @@ De huidige contactpagina van Beyco is erg simpel. Voor gebruikers moet het gemak
 ## Kenmerken
 ### Foutmeldingen
 Voor de foutmeldingen van het formulier heb ik input:focus:required:invalid en textarea:focus:required:invalid gebruikt. Dit gebruik ik om de lijn rood te maken wanneer een text input en een textarea niet ingevuld zijn. De email input blijft ook rood wanneer je geen @ gebruikt.
-#### Code
-
+#### HTML code
+```html
+ <form>
+                            <div class="container">
+                                <div class="name">
+                                    <label for="name">Name: </label>
+                                    <input type="text" name="name" required/>
+                                </div>
+                                <div class="email">
+                                    <label for="email">Email: </label>
+                                    <input type="email" name="email" required/>
+                                </div>
+                                <div class="subject">
+                                    <label for="subject">Subject: </label>
+                                    <input type="text" name="subject" required/>
+                                </div>
+                            </div>
+                                <textarea name="message" cols="60" rows="20" required></textarea>
+                        </form>
+```
 ### Animatie formulier
 Voor de animatie van de formulier heb ik voor de button een onclick="flip() gebruikt in html. Die verwijst naar de function flip() in de javascript waarin een document.getElementById zit. Verder zijn er ook draai animaties in de css die het formulier laten draaien.
 #### HTML code
