@@ -40,6 +40,19 @@ Voor de foutmeldingen van het formulier heb ik input:focus:required:invalid en t
         <textarea name="message" cols="60" rows="20" required></textarea>
 </form>
 ```
+#### CSS code
+```css
+/* Error inputs ontwerp */
+input:focus:required:invalid { 
+    border: 4px solid rgba(58, 128, 112, 0.2);
+    box-shadow: inset 0px -2.5px 0px #D9585C;
+}
+
+textarea:focus:required:invalid { 
+    border: 4px solid rgba(58, 128, 112, 0.2);
+    box-shadow: inset 0px -2.5px 0px #D9585C;
+}
+```
 ### Animatie formulier
 Voor de animatie van de formulier heb ik voor de button een onclick="flip() gebruikt in html. Die verwijst naar de function flip() in de javascript waarin een document.getElementById zit. Verder zijn er ook draai animaties in de css die het formulier laten draaien.
 #### HTML code
