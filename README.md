@@ -22,7 +22,7 @@ De huidige contactpagina van Beyco is erg simpel. Voor gebruikers moet het gemak
 Voor de foutmeldingen van het formulier heb ik input:focus:required:invalid en textarea:focus:required:invalid gebruikt. Dit gebruik ik om de lijn rood te maken wanneer een text input en een textarea niet ingevuld zijn. De email input blijft ook rood wanneer je geen @ gebruikt.
 #### HTML code
 ```html
- <form>
+<form>
     <div class="container">
         <div class="name">
             <label for="name">Name: </label>
