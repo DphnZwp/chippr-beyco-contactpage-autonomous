@@ -144,7 +144,7 @@ input:focus {
     box-shadow: inset 0px -2.5px 0px #3A8070;
     outline: none;
 }
-/* Error ontwerp */
+/* Error inputs ontwerp */
   input:focus:required:invalid { border: 4px solid rgba(58, 128, 112, 0.2);
       box-shadow: inset 0px -2.5px 0px #D9585C;
   }
