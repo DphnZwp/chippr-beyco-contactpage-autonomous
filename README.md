@@ -163,8 +163,8 @@ De google map heb ik in de css in grayscale gemaakt. Dat heb ik met een grey fil
 #### HTML code
 ```html
 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.429483301174!2d4.918550115801601!3d52.362631979784645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60975811f5c2f%3A0xed0a8af3106cbefc!2sMauritskade%2064%2C%201092%20AD%20Amsterdam!5e0!3m2!1sen!2snl!4v1633419886148!5m2!1sen!2snl"></iframe>
-                </div>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.429483301174!2d4.918550115801601!3d52.362631979784645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60975811f5c2f%3A0xed0a8af3106cbefc!2sMauritskade%2064%2C%201092%20AD%20Amsterdam!5e0!3m2!1sen!2snl!4v1633419886148!5m2!1sen!2snl"></iframe>
+</div>
 ```
 #### CSS code
 ```css
