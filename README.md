@@ -29,11 +29,12 @@ Voor de animatie van de formulier heb ik voor de button een onclick="flip() gebr
 ### Google map bewerking
 De google map heb ik in de css in grayscale gemaakt. Dat heb ik met een grey filter gemaakt in de map class.
 #### CSS code
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
+```css
+.map {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+    justify-content: center;
 }
 ```
 ## Installatie
