@@ -119,6 +119,10 @@ label {
     width: 39px;
 }
 
+.labelHide {
+    display: none;
+}
+
 input {
     height: 41px;
     width: 343px;
